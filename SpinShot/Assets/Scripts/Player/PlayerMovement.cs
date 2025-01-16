@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private float playerSpeed = 4.0f;
+    private float playerSpeed = 5.0f;
     private float jumpHeight = 2.0f;
     private float gravityValue = -9.81f;
 
@@ -26,10 +26,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.LogError("No main camera found. Ensure the camera has the tag 'MainCamera'.");
         }
-
-        // Lock and hide the cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     void Update()
